@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("images/loose\ weight\ -\ Copy.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 100%;
+}
+/*--------------------navbar------------------------*/
+
+#nav-bar{
+    list-style-type: none;
+    background-color: #43b4a5e8;
+    overflow: hidden;
+    width: 100%;  
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+#nav-bar li{
+    float: left;  
+        
+}
+#nav-bar li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 11px 55px;
+    font-size: large;   
+}
+i{
+    margin-right: 10px;
+}
+.search{
+    margin-top: 11px;
+    border-radius: 15px; 
+    width: 80%; 
+}
+.fa-search{
+    color: white;
+}
+/*hover on elements in nav bar*/
+li a:hover{
+    background-color: rgb(41 38 38 / 71%);
+    transition-delay: 0.1s;
+}
+
+.heading
+{
+    color: white;
+    margin: 122px;
+    font-family: "Sofia";
+    margin-left: 213px;
+}
+.container a{
+   
+    background-color: #3fa597;
+    text-decoration: none;
+    color: white;
+    margin: 180px;
+    font-size: xx-large;
+    padding: 16px;
+}
+
+.explain{
+    color: white;
+    margin: 0px 69px 400px 69px;
+    width: 51%;
+}
+.explain h1{
+    margin-bottom: 23px;
+    color: #3fa597;
+    letter-spacing: 5px;
+    font-family: "Sofia";
+
+}
+.explain p{
+    line-height: 2;
+    font-size: larger;
+    letter-spacing: 1px;
+}
+.explain li{
+    list-style: none;
+    letter-spacing: 1px;
+    font-size: 29px;
+    margin-bottom: 70px;
+}
+.explain i{
+    color: #40a799;
+}
+img{
+    height: 630px;
+    width: 385px;
+    transform: translate(186%,100%);
+    border-radius: 52px;
+}
+.cal{
+    transform: translate(207%, 93%);
+}
+
+@media(max-width:700px){
+    body{
+        background-position: center;
+        background-size: cover;
+        
+    }
+    .heading{
+        color: white;
+        margin: 127px;
+        font-family: "Sofia";
+        width: 267%;
+        transform: translate(-2px, 69px);
+        font-size: 36px;
+    }
+    .container a{
+   
+        color: white;
+        margin: 127px;
+        font-family: "Sofia";
+        width: 267%;
+        transform: translate(-3px, 84px);
+        font-size: 36px;
+    }
+    img{
+        height: 647px;
+    width: 385px;
+    transform: translate(138%,54%);
+    border-radius: 52px;
+    }
+    }

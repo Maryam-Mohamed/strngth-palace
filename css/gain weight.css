@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("images/gain\ weight\ -\ Copy.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+/*--------------------navbar------------------------*/
+#nav-bar{
+    list-style-type: none;
+    background-color: #43b4a5e8;
+    overflow: hidden;
+    width: 100%;  
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+#nav-bar li{
+    float: left;     
+}
+#nav-bar li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 11px 55px;
+    font-size: large;   
+}
+i{
+    margin-right: 10px;
+}
+.search{
+    margin-top: 11px;
+    border-radius: 15px; 
+    width: 80%; 
+}
+.fa-search{
+    color: white;
+}
+/*hover on elements in nav bar*/
+li a:hover{
+    background-color: rgb(41 38 38 / 71%);
+    transition-delay: 0.1s;
+}
+h1{
+    color: white;
+    transform: translate(21%, 89%);
+    margin: 31px;
+    font-size: xxx-large;
+}
+.container{
+    margin: 5% 5% 15% 5%;
+    width: 356px;
+    height: 715px;
+    border-radius: 44px;
+  }
+  .container img{
+    height: 371px;
+    width: 79%;
+    border-radius: 9%;
+    margin-left: 44px;
+    transform: translateX(138%);
+    width: 130%;
+}
+  .container h2{
+    color: white;
+    transform: translate(-5px, 23px);
+    font-size: xxx-large;
+  }
+  .container p{
+    color: white;
+    letter-spacing: 2px;
+    transform: translate(-5px, -124%);
+    font-size: 125%;
+    width: 535px;
+  }
+  .second{
+    margin: -18% 5% 15% 3%;
+  }
+  .second p{
+    transform: translate(0px, -215%);
+  }
+  @media(max-width:700px){
+    body{
+        background-position: center;
+        background-size: cover;
+        
+    }
+    #nav-bar{
+        width: 30%;  
+        background-color: transparent;
+        top: 0;
+        position: relative;
+    }
+    #nav-bar li a{
+        padding: 7px 22px;
+        font-size: smaller;
+    } 
+    .container img{
+      height: 371px;
+    border-radius: 9%;
+    margin-left: 44px;
+    transform: translate(-46px, 311px);
+    width: 124%;
+  }
+
+  .container h2{
+    color: white;
+    transform: translate(-5px, 26px);
+    font-size: xx-large;
+    margin-top: 200px;
+  }
+  h1{
+    color: white;
+    transform: translate(17%, 59px);
+    border-radius: 22px;
+    font-size: 24px;
+    background-color: #289898d9;
+    padding: 28px;
+    width: 86%;
+  }
+
+  .container img{
+    height: 405px;
+    border-radius: 9%;
+    margin-left: 44px;
+    transform: translate(-46px, 370px);
+    width: 129%;
+}
+
+
+  }
+  

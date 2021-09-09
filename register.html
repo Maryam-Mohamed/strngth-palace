@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css" integrity="sha512-sVSECYdnRMezwuq5uAjKQJEcu2wybeAPjU4VJQ9pCRcCY4pIpIw4YMHIOQ0CypfwHRvdSPbH++dA3O4Hihm/LQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+     <!--Nav bar-->
+     <nav>
+        <ol id="nav-bar">
+            <li><a href="Home.html"><span class="home-icon"><i class="fas fa-home"></i></span>Home</a></li>
+            <li><a href="Home.html#menu"><span class="contact-icon"><i class="fas fa-bars"></i></span>Menu</a></li>
+            <li><a href="Home.html#diet-systems"><span class="deit-icon"><i class="fas fa-apple-alt"></i></span>Diet Systems</a></li>
+            <li><a href="Home.html#feedbacks"><span class="feedback-icon"><i class="fas fa-comment"></i></span>Feedbacks</a></li>
+            <li><a href="Home.html#contact"><span class="contact-icon"><i class="fas fa-envelope-open"></i></span>Contact Us</a></li>
+            <li> <span class="deit-icon"><i class="fas fa-search"></i></span><input type="text" placeholder="search" class="search"></li>    
+        </ol>
+    </nav>
+        <!--form-->
+        <div class="form">
+            <form id="FID">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" >
+                <br>
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" >
+                <br>
+                <label for="phoneno">Phone Number</label>
+                <input type="text" name="phoneno" id="phoneno" >
+                <br>
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" >
+                <br>
+                <input type="submit" onclick="register();" name="submit" id="submit" >
+                
+            </form>
+
+        </div>
+        
+        <script src="script.js"></script>
+
+</body>

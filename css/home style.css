@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+/*--------------------navbar------------------------*/
+.cover{
+    background-image: url(images/cover.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+#nav-bar{
+    list-style-type: none;
+    background-color: #43b4a5e8;
+    overflow: hidden;
+    width: 100%;  
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+#nav-bar li{
+    float: left;  
+        
+}
+#nav-bar li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 11px 55px;
+    font-size: large;   
+}
+i{
+    margin-right: 10px;
+}
+.search{
+    margin-top: 11px;
+    border-radius: 15px; 
+    width: 80%; 
+}
+.fa-search{
+    color: white;
+}
+/*hover on elements in nav bar*/
+li a:hover{
+    background-color: rgb(41 38 38 / 71%);
+    transition-delay: 0.1s;
+}
+/*-----------title---------------*/
+
+.header{
+    color: #ffffffe8;
+    text-align: center;
+    letter-spacing: 13px;
+    font-size: 88px;
+    text-transform: capitalize;
+    margin-top: 15%;
+    
+   
+}
+
+.firstletter{
+    color:#3ebbaada;
+    font-style: italic;
+    font-size: 131px;
+}
+.quote{
+    color: #ffffffe8;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Sofia";
+    letter-spacing: 3px;
+    margin-top: 20px;
+    padding-bottom: 32px;
+
+}
+/*----------section title------------*/
+.section{
+    
+    color: white;
+    font-family: "Sofia";
+    text-align: center;
+    margin: 10% 0%;
+    letter-spacing: 12px;
+    font-size: 45px;
+    
+}
+/*----------intro video-----------------*/
+.intro-video{
+    margin: 10% 0% 5% 5%;
+    width: 88%;
+    
+}
+/*----------Menu-------------*/
+.all{
+    margin-top: 20%;
+}
+
+.container{
+  background-color: #52b1a4ba;
+  float: left;
+  margin:5% 5% 15% 5%;
+  width: 300px; 
+  height: 650px; 
+  border-radius: 44px;
+}
+.container img{
+    height: 300px;
+    width: 70%;
+    border-radius: 9%;
+    margin-left: 44px;
+    
+}
+.container h2{
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.container p{
+    color: white;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    margin-left: 20px;
+    margin-top: 55px;
+}
+/*hover on container*/
+.container:hover{
+    border: white solid 2px;
+    transition-delay: 0.1s;
+}
+.clear{
+    clear: both;
+}
+.container:hover img{
+    transform: scale(1.2);
+    transition-delay: 0.1s;
+    opacity: 0.9;
+    margin-top: 20px;
+    
+}
+
+/*Diet Systems*/
+.title{
+    color: white;
+    margin: 8% 0 0 2%;
+    font-size: 41px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    
+}
+.title a{
+    text-decoration: none;
+    color: white;
+}
+.second-container
+{
+    background-color: #52b1a46b;;
+    width: 70%;
+    margin-top:2%;
+    margin-left: 5%;
+    overflow: hidden;
+    transform-origin: left top;
+    transform: rotateY(90deg)
+    
+    
+
+}
+.second-container img{
+    width: 38%;
+    padding: 10px;
+    height: 185px;
+    float: left;
+}
+.second-container p{
+    color: white;
+    letter-spacing: 0.5px;
+    margin-left: 20px;
+    line-height: 2;  
+    padding: 37px;
+}
+/*hover on diet system*/
+.title a:hover {
+    text-decoration: underline;
+    
+}
+.title:hover + div{
+    transform: rotateY(0);
+    perspective-origin: left top;
+    transition-delay: 0.1s;
+}
+
+/*Feedbacks*/
+
+.feedback {
+    background-color:  #52b1a4ba;  
+    margin-top: 10%;
+    color: white;
+    padding: 10px;
+    margin: 20% 0% 28% 0%;
+   
+}
+.feedback p{
+    margin: 10px;
+}
+.rate{
+    margin: 10px;
+}
+.name{
+    font-size: x-large;
+}
+.parag{
+    margin-bottom: 10px;
+}
+/*contact us*/
+.contactus{
+  background-color:  #52b1a4ba;  
+  
+    
+}
+.firstname{
+    color: #292727;
+    font-style: italic;
+}
+.logo{
+    padding: 30px
+
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-family: "Sofia";
+    line-height: 1;
+    margin: 20px ;
+   
+}
+.icons a{
+    color: white;
+    margin: 10px 1px 10px 10px;
+    font-size: x-large;
+    padding-left: 10px;
+    
+}
+.contactus p{
+    color: white;
+    padding: 19px;
+    font-size: 25px;
+}
+.contactus p a{
+   color: white;
+}
+@media(max-width:700px){
+    body{
+        background-position: center;
+        background-size: cover;
+        
+    }
+    #nav-bar{
+        width: 30%;  
+        background-color: transparent;
+        top: 0;
+    }
+    #nav-bar li a{
+        padding: 7px 22px;
+        font-size: smaller;
+    } 
+    
+    .header{
+        font-size: 30px;
+        letter-spacing: 0;
+    }
+    .firstletter{
+        font-size: 40px;
+    }
+    .quote{
+        font-size: 7px;
+        letter-spacing: 0;
+    }
+    
+   
+    .section{
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+    .container{
+        width: 250px;
+        margin:5% 2% 15% 15%;
+    }
+    .title{
+        font-size: 28px;
+    }
+    
+    
+     
+      
+
+   
+}
+
+

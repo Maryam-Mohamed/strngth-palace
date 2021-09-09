@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background-image: url(images/background2.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+/*--------------------navbar------------------------*/
+.cover{
+    background-image: url(images/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+
+}
+#nav-bar{
+    list-style-type: none;
+    background-color: #43b4a5e8;
+    overflow: hidden;  
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+#nav-bar li{
+    float: left;      
+}
+#nav-bar li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 11px 55px;
+    font-size: large;   
+}
+i{
+    margin-right: 10px;
+}
+.search{
+    margin-top: 11px;
+    border-radius: 15px; 
+    width: 80%; 
+}
+.fa-search{
+    color: white;
+}
+/*hover on elements in nav bar*/
+li a:hover{
+    background-color: rgb(41 38 38 / 71%);
+    transition-delay: 0.1s;
+}
+
+/*title*/
+.title{
+    
+    color: white;
+    margin-top: 250px;
+    max-width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    letter-spacing: 15px;
+    font-family: "Sofia";   
+}
+/*image flip*/
+.flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 400px;
+    margin-bottom: 20%;
+    margin-top: 5%;
+    perspective: 1000px; /* 3D effect */
+    transform: translateX(30vw);
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Safari */
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color:transparent;
+    color: white;
+    transform: rotateY(180deg);
+    
+  }
+  
+  
+  
+  .heading{
+      color: #43b4a5e8;
+      font-family: "Sofia";
+      font-size: larger;
+  }
+/*sections*/
+.container1{
+    color: white;
+    display: flex;
+    justify-content: space-around; 
+    width: 100%;
+}
+
+.content{
+    margin: 10px 10px 71px 10px;
+    background-color: #3fa597;
+    padding: 10px;
+    width: 25%;
+    text-align: center;
+    font-size: x-large;
+    cursor: pointer;
+}
+.sameProp{
+    background-color: transparent;
+}
+
+
+/*second container*/
+.container1 img{
+    width: 100%;
+    height: 80%;
+}
+.container1 h4{
+    color: white;
+    margin-bottom: 38px;
+    font-size: 92%;
+    text-transform: uppercase;
+}
+.container1 a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 11%;
+    transform: translateY(-25px);
+}
+/*media screen*/
+@media(max-width:700px){
+    #nav-bar{
+        width: 30%;  
+        background-color: transparent;
+        top: 0;
+    }
+    #nav-bar li a{
+        padding: 7px 22px;
+        font-size: smaller;
+    } 
+    .title{
+    
+       transform: translateX(15%);
+        font-size: large;
+        letter-spacing: 8px;  
+    }
+
+    .flip-card {
+        width: 300px;
+        height: 200px;
+        perspective: 1000px; /* 3D effect */
+        transform: translateX(20vw);
+      }
+      .flip-card-back{
+        overflow-y: scroll;
+      }
+      .container1{
+          margin-left: 40px;
+          margin-bottom: 20%;
+          
+      }
+      .content{
+        padding-right: 29px;
+      }
+      .lunch ,
+      .dinner{
+        padding-left: 24px;
+      }
+      
+      .container1 img{
+        height: 50%;
+
+    }
+    .container1 h4{
+        
+        font-size: small;
+        margin-bottom: 33px;
+    }
+    .container1 a{
+        margin-bottom: 8%;
+        font-size: 53%;
+    }
+    .content2{
+        padding: 26px;
+        margin-top: -85px;
+    }
+    
+
+}
+
